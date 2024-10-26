@@ -1,4 +1,4 @@
-from PyPDF2 import PdfReader, PdfWriter
+from pypdf import PdfReader, PdfWriter
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import letter
 from io import BytesIO
@@ -37,7 +37,8 @@ def create_overlay(units, annotations):
         # get next annotation
         x, y = annotations.pop(0)
         # move text down according to font size too
-        y -= 12
+        x += 2
+        y -= 13
         can.drawString(x, y, text)
     
     can.showPage()  # Ensure the page is finalized

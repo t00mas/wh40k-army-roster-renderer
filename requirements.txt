@@ -1,0 +1,5 @@
+chardet==5.2.0
+pillow==11.0.0
+pypdf==5.0.1
+reportlab==4.2.5
+typing_extensions==4.12.2
